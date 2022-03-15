@@ -1,0 +1,130 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@drawable/heshbonit"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הנפקת קבלה"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="35dp"/>
+        <TextView
+            android:id="@+id/kabala_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="25dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_go_home_kabala"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableBottom="@drawable/ic_baseline_home_24" />
+
+        <EditText
+            android:id="@+id/ed_client_name_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="*לכבוד"
+            android:inputType="text"
+            android:maxLength="30"/>
+
+        <EditText
+            android:id="@+id/ed_client_adress_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:hint="*כתובת"
+            android:maxLength="40"/>
+
+        <EditText
+            android:id="@+id/ed_client_tel_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="*הכנס מספר טלפון"
+            android:inputType="number"
+            android:maxLength="10"/>
+
+        <EditText
+            android:id="@+id/ed_client_Description_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="50"
+            android:inputType="text"
+            android:hint="מזומן/אשראי " />
+        <EditText
+            android:id="@+id/ed_client_Description1_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="50"
+            android:inputType="text"
+            android:hint="העברה בנקאית" />
+        <EditText
+            android:id="@+id/ed_client_Description2_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLength="50"
+            android:inputType="text"
+            android:hint="שיק מספר/בנק/סניף" />
+        <EditText
+            android:id="@+id/ed_client_price_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="*סכום לתשלום"
+            android:maxLength="12"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/ed_client_date_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint=" *תאריך הנפקה dd/mm/yy"
+            android:inputType="text"
+            android:maxLength="8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    *שדות חובה"/>
+
+        <Button
+            android:id="@+id/btn_save_recive_kabala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="הנפק ושמור קבלה"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

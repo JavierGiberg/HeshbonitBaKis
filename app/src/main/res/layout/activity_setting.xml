@@ -1,0 +1,110 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@drawable/heshbonit"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הגדרות עסק"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="35dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_go_home_setting"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="end"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableBottom="@drawable/ic_baseline_home_24" />
+
+        <EditText
+            android:id="@+id/ed_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLength="30"
+            android:hint="הכנס שם העסק" />
+
+        <EditText
+            android:id="@+id/ed_txt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="הכנס מס ע.פ/ע.ס/ח.פ"
+            android:maxLength="12"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/ed_txt_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="הכנס מספר טלפון"
+            android:maxLength="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/ed_txt_num_recive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="התחל מחשבונית מספר"
+            android:maxLength="15"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/ed_txt_num_kabala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="התחל מקבלה מספר"
+            android:maxLength="15"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/ed_txt_num_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="התחל מהזמנת עבודה מספר"
+            android:maxLength="15"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/ed_txt_tax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="קבע אחוז מע'מ"
+            android:maxLength="2"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    *יש למלא שדות לשינוי"/>
+
+        <Button
+            android:id="@+id/btn_save_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="שמור והחל"
+            android:layout_marginTop="45dp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.HeshbonitBeClick">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HeshbonitBeClick"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Condithion"
+            android:exported="false"
+            android:theme="@style/Theme.HeshbonitBeClick.NoActionBar" />
+        <activity
+            android:name=".Help"
+            android:exported="false"
+            android:theme="@style/Theme.HeshbonitBeClick.NoActionBar" />
+        <activity
+            android:name=".Order"
+            android:exported="true"
+            android:theme="@style/Theme.HeshbonitBeClick.NoActionBar" />
+        <activity
+            android:name=".Kabala"
+            android:exported="true"
+            android:label="Kabala"
+            android:theme="@style/Theme.HeshbonitBeClick.NoActionBar" />
+        <activity
+            android:name=".Setting"
+            android:exported="true"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/Theme.HeshbonitBeClick.NoActionBar" />
+        <activity
+            android:name=".Heshbonit"
+            android:exported="true"
+            android:label="@string/title_activity_heshbonit"
+            android:theme="@style/Theme.HeshbonitBeClick.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.HeshbonitBeClick.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+    </application>
+
+</manifest>
